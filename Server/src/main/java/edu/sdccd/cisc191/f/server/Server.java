@@ -42,7 +42,6 @@ public class Server {
 
                 out.println(PlayerResponse.toJSON(response));
 
-
                 System.out.printf("Sending response to client %d\n", request.getId());
             }
         }

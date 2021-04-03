@@ -35,6 +35,10 @@ public class Client {
         return PlayerResponse.fromJSON(in.readLine());
     }
 
+    public EntityResponse sendEntityRequest() throws Exception {
+
+    }
+
 
 
 
@@ -49,6 +53,7 @@ public class Client {
         try {
             client.startConnection("127.0.0.1", 4444);
             System.out.println(client.sendPlayerRequest().toString());
+
             client.stopConnection();
         } catch(Exception e) {
             e.printStackTrace();
